@@ -23,7 +23,7 @@ export default function Home() {
             </div>
           </div>
         </header>
-        <div className="min-w-full py-2 flex flex-nowrap">
+        <div className="min-w-full pt-10 pb-14 flex flex-nowrap">
           <div className="w-full flex justify-center text-5xl font-bold">
             <h1>Chega de pagar para ter meios de pagamentos</h1>
           </div>
@@ -36,16 +36,20 @@ export default function Home() {
             <a href="">—— Saiba mais</a>
           </div>
         </div>
-        <div className="w-full h-full flex justify-center items-center relative">
+        <div className="relative">
           <img
             src="https://quickdigitalbank.com.br/wp-content/uploads/2024/08/banner-sobre-quick-digital.svg"
             alt=""
-            className="rounded-2xl w-auto max-w-full"
+            className="w-full h-[350px] rounded-xl object-cover"
           />
-          <h1 className="absolute text-white text-2xl max-w-4xl font-bold">
-            Simplificamos em uma nova tecnologia um produto que traz receita e
-            não custos e despesas.
-          </h1>
+          <div className="absolute inset-y-0 left-0 w-1/2 flex items-center">
+            <div className="p-12">
+              <h1 className="text-white text-4xl font-bold">
+                Simplificamos em uma nova tecnologia um produto que traz receita
+                e não custos e despesas.
+              </h1>
+            </div>
+          </div>
         </div>
       </div>
     </>
