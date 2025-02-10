@@ -55,7 +55,7 @@ export default function Home() {
   return (
     <>
       <div className="">
-        <header className="fixed z-50 bg-white w-full top-0 left-0 h-auto py-5 px-72">
+        <header className="fixed z-50 bg-white w-full top-0 left-0 h-auto py-5 px-64">
           <div className="flex flex-row justify-between">
             <div className="flex items-center text-2xl">
               <img
@@ -141,7 +141,7 @@ export default function Home() {
           </div>
         </header>
 
-        <div className="relative pt-16 px-72">
+        <div className="relative pt-16 px-64">
           {/* Background */}
           <div className="absolute inset-0 bg-[#2F0B04]"></div>
 
@@ -170,7 +170,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="min-w-full pt-10 pb-14 flex flex-nowrap px-72">
+        <div className="min-w-full pt-10 pb-14 flex flex-nowrap px-64">
           <div className="w-full flex justify-center text-5xl font-bold text-primaryColor">
             <h1>Chega de pagar para ter meios de pagamentos</h1>
           </div>
@@ -185,7 +185,7 @@ export default function Home() {
             </a>
           </div>
         </div>
-        <div className="relative px-72 pb-7">
+        <div className="relative px-64 pb-7">
           <img
             src="https://quickdigitalbank.com.br/wp-content/uploads/2024/08/banner-sobre-quick-digital.svg"
             alt=""
@@ -201,7 +201,7 @@ export default function Home() {
           </div>
         </div>
 
-        <Marquee className="py-10">
+        <Marquee className="py-6">
           <div className="flex h-auto items-center">
             {reviews.map((review) => (
               <img
@@ -214,12 +214,14 @@ export default function Home() {
           </div>
         </Marquee>
 
-        <div className="px-72 flex py-5">
+        <div className="px-64 flex py-20">
           <div className="w-1/3 flex flex-col justify-center">
-            <p className="font-bold text-primaryColor pb-6">
+            <p className="font-bold text-secondaryColor pb-2">
               ENTENDA AS NOSSAS
             </p>
-            <h1 className="text-5xl font-semibold">Vantagens Exclusivas</h1>
+            <h1 className="text-5xl font-semibold py-2">
+              Vantagens Exclusivas
+            </h1>
             <p className="text-gray-600 py-5">
               Na Quick Digital o que não falta são vantagens para nossos
               clientes e parceiros, confira algumas e descomplique a vida
@@ -229,7 +231,7 @@ export default function Home() {
               Quero descomplicar
             </Button>
           </div>
-          <div className="grid grid-cols-2 w-2/3 shadow-lg">
+          <div className="grid grid-cols-2 w-2/3 shadow-[4px_4px_10px_rgba(0,0,0,0.1)]">
             <div className="border-r border-b flex flex-col items-start justify-center p-12 w-full h-52">
               <div className="pb-4">
                 <TrendingDown size={30} className="text-primaryColor" />
