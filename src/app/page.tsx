@@ -1,10 +1,20 @@
 import { Button } from "@/components/ui/button";
+import {
+  NavigationMenu,
+  NavigationMenuContent,
+  NavigationMenuItem,
+  NavigationMenuList,
+  NavigationMenuTrigger,
+} from "@radix-ui/react-navigation-menu";
+import { ChevronDown } from "lucide-react";
+import Link from "next/link";
+import { HiOutlineLockClosed } from "react-icons/hi2";
 
 export default function Home() {
   return (
     <>
-      <div className="pt-3 ">
-        <header className="min-w-full h-auto py-5 px-72">
+      <div className="">
+        <header className="fixed z-50 bg-white w-full top-0 left-0 h-auto py-5 px-72">
           <div className="flex flex-row justify-between">
             <div className="flex items-center text-2xl">
               <img
@@ -12,21 +22,85 @@ export default function Home() {
                 alt=""
               />
             </div>
-            <div className="flex gap-8 justify-center items-center text-xl">
-              <nav className="flex gap-8">
-                <a href="">Inicio</a>
-                <a href="">Quem somos</a>
-                <a href="">Soluções</a>
-                <a href="">Contato</a>
+            <div className="flex gap-8 justify-center items-center text-xl font-medium text-gray-600">
+              <nav className="w-full px-4 py-2 text-lg">
+                <NavigationMenu className="max-w-screen-xl mx-auto">
+                  <NavigationMenuList className="flex items-center gap-6">
+                    <NavigationMenuItem>
+                      <Link href="/" legacyBehavior passHref>
+                        <a href="" className="pl-3 hover:text-primaryColor">
+                          Inicio
+                        </a>
+                      </Link>
+                    </NavigationMenuItem>
+
+                    <NavigationMenuItem>
+                      <Link href="/quem-somos" legacyBehavior passHref>
+                        <a href="" className="pl-3 hover:text-primaryColor">
+                          Quem somos
+                        </a>
+                      </Link>
+                    </NavigationMenuItem>
+
+                    <NavigationMenuItem>
+                      <NavigationMenuTrigger>
+                        <a
+                          href=""
+                          className="pl-3 hover:text-primaryColor flex gap-1"
+                        >
+                          Soluções
+                          <div className="flex items-end">
+                            <ChevronDown className="w-4" />
+                          </div>
+                        </a>
+                      </NavigationMenuTrigger>
+                      <NavigationMenuContent className="absolute z-10">
+                        <ul className=" w-auto p-4 bg-white">
+                          <li className="pt-6">
+                            <Link href="/component-1" legacyBehavior passHref>
+                              <a
+                                href=""
+                                className="pl-1 hover:text-primaryColor"
+                              >
+                                Sou logista
+                              </a>
+                            </Link>
+                          </li>
+                          <li className="pt-6">
+                            <Link href="/component-1" legacyBehavior passHref>
+                              <a
+                                href=""
+                                className="pl-1 hover:text-primaryColor"
+                              >
+                                Sou revendedor
+                              </a>
+                            </Link>
+                          </li>
+                        </ul>
+                      </NavigationMenuContent>
+                    </NavigationMenuItem>
+                    <NavigationMenuItem>
+                      <Link href="/quem-somos" legacyBehavior passHref>
+                        <a href="" className="pl-3 hover:text-primaryColor">
+                          Contato
+                        </a>
+                      </Link>
+                    </NavigationMenuItem>
+                  </NavigationMenuList>
+                </NavigationMenu>
               </nav>
-              <Button className="text-xl p-6 bg-primaryColor hover:bg-[#9D321E] rounded-lg">
+              <Button
+                variant="default"
+                className="gap-2 py-3 px-4 bg-primaryColor hover:bg-[#9D321E] rounded-lg h-auto font-medium text-lg"
+              >
+                <HiOutlineLockClosed className="!w-6 !h-6 " />
                 Login
               </Button>
             </div>
           </div>
         </header>
 
-        <div className="relative px-72">
+        <div className="relative pt-16 px-72">
           {/* Background */}
           <div className="absolute inset-0 bg-[#2F0B04]"></div>
 
