@@ -19,7 +19,9 @@ export default function Home() {
                 <a href="">Soluções</a>
                 <a href="">Contato</a>
               </nav>
-              <Button className="text-xl p-6">Login</Button>
+              <Button className="text-xl p-6 bg-primaryColor hover:bg-[#9D321E] rounded-lg">
+                Login
+              </Button>
             </div>
           </div>
         </header>
@@ -54,25 +56,27 @@ export default function Home() {
           </div>
         </div>
         <div className="min-w-full pt-10 pb-14 flex flex-nowrap px-72">
-          <div className="w-full flex justify-center text-5xl font-bold">
+          <div className="w-full flex justify-center text-5xl font-bold text-primaryColor">
             <h1>Chega de pagar para ter meios de pagamentos</h1>
           </div>
           <div className="w-full flex flex-col justify-center gap-y-3 text-lg">
-            <p className="break-words">
+            <p className="break-words text-gray-500 text-xl">
               Somos a Quick Digital, empresa que conhece o seu cliente no dia a
               dia, entende todas as dores dos empresários, pequenas e médias
               empresas do Brasil.
             </p>
-            <a href="">—— Saiba mais</a>
+            <a href="" className="text-primaryColor font-bold">
+              —— Saiba mais
+            </a>
           </div>
         </div>
-        <div className="relative px-72">
+        <div className="relative px-72 pb-7">
           <img
             src="https://quickdigitalbank.com.br/wp-content/uploads/2024/08/banner-sobre-quick-digital.svg"
             alt=""
-            className="w-full h-[350px] rounded-xl object-cover"
+            className="w-full h-[350px] rounded-2xl object-cover"
           />
-          <div className="absolute inset-y-0 left-0 w-1/2 flex items-center">
+          <div className="absolute inset-y-0 left-72 right-1/2 flex items-center">
             <div className="p-12">
               <h1 className="text-white text-4xl font-bold">
                 Simplificamos em uma nova tecnologia um produto que traz receita
