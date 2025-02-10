@@ -148,9 +148,11 @@ export default function Home() {
           {/* Content container */}
           <div className="relative flex flex-row  py-12">
             <div className="w-1/2 flex justify-center flex-col">
-              <h1 className="font-bold text-white text-5xl mb-4 break-words">
-                Simplificando a tecnologia financeira para o pequeno e médio
-                negócio
+              <h1 className="font-semibold text-white text-[42px] leading-[44px] mb-4 w-4/5 break-words">
+                Simplificando a tecnologia financeira para o{" "}
+                <span className="underline decoration-primaryColor">
+                  pequeno e médio negócio
+                </span>
               </h1>
               <p className="text-white mb-6">
                 Com a Quick Digital o empreendedor raiz terá descomplicação no
@@ -266,6 +268,53 @@ export default function Home() {
               <p className="text-xs">
                 Excelente remuneração na sua conta bancária digital.
               </p>
+            </div>
+          </div>
+        </div>
+        <div className="flex flex-col items-center py-12 bg-thirdColor">
+          <h4 className="text-secondaryColor font-bold pb-3">
+            VEJAM O QUE DIZEM DA
+          </h4>
+          <h1 className="text-5xl font-semibold pb-10">
+            Quick Digital na mídia
+          </h1>
+          <div className="flex w-full px-64">
+            <div className="w-7/12 h-60 px-6">
+              <img
+                src="https://quickdigitalbank.com.br/wp-content/uploads/2024/07/swiper-na-midia.png"
+                alt=""
+                className="rounded-xl w-full h-full"
+              />
+              <h3>Startups.com.br</h3>
+              <p>
+                TecBan quer cocriar 30 negócios em escala com startups até 2027
+              </p>
+              <a href="">Ler mais</a>
+            </div>
+            <div className="w-7/12 h-60 px-6">
+              <img
+                src="https://quickdigitalbank.com.br/wp-content/uploads/2024/08/cnn-brasil.png"
+                alt=""
+                className="rounded-xl w-full h-full"
+              />
+              <h3>CNN Business</h3>
+              <p>
+                10 Dicas importantes para fugir do juros do cartão de crédito
+              </p>
+              <a href="">Ler mais</a>
+            </div>
+            <div className="w-7/12 h-60 px-6">
+              <img
+                src="https://quickdigitalbank.com.br/wp-content/uploads/2024/08/jovem-pan.png"
+                alt=""
+                className="rounded-xl w-full h-full"
+              />
+              <h3>Jovem pan</h3>
+              <p>
+                Saiba quais são as vantagens dos bancos digitais para o
+                consumidor
+              </p>
+              <a href="">Ler mais</a>
             </div>
           </div>
         </div>
