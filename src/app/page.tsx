@@ -338,6 +338,24 @@ export default function Home() {
             </div>
           </div>
         </div>
+        <div>
+          <div>
+            <h3>CONHEÇA OS NOSSOS</h3>
+            <h1>Parceiros</h1>
+          </div>
+          <div>
+            <div>
+              <a href="">
+                <img
+                  src="https://quickdigitalbank.com.br/wp-content/uploads/2024/07/logo-parceiros.png"
+                  alt=""
+                />
+              </a>
+            </div>
+            <a href=""></a>
+            <a href=""></a>
+          </div>
+        </div>
       </div>
     </>
   );
