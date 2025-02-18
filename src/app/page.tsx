@@ -16,6 +16,7 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 import { HiOutlineLockClosed } from "react-icons/hi2";
+import { PiMailboxLight } from "react-icons/pi";
 
 export default function Home() {
   const reviews = [
@@ -417,6 +418,34 @@ export default function Home() {
               alt=""
               className="rounded-3xl w-3/4"
             />
+          </div>
+        </section>
+        <section className="px-64 py-20 flex items-start text-white bg-orange-900">
+          <div className="flex flex-col w-1/3">
+            <PiMailboxLight className="w-14 h-14" />
+            <p className="py-5">
+              Seu novo parceiro de negócios que fala a sua língua
+            </p>
+            <h1 className="text-3xl font-bold pb-10">
+              Fique por dentro de tudo que acontece na Quick Digital
+            </h1>
+            <form action="" className="flex flex-col gap-5">
+              <input
+                type="text"
+                id="name"
+                placeholder="Seu nome"
+                className="py-5 pl-2 rounded-sm bg-[#452023] text-white placeholder-white focus:outline-blue-600 focus:border-none text-sm"
+              />
+              <input
+                type="text"
+                id="email"
+                placeholder="Insira seu melhor email"
+                className="py-5 pl-2 rounded-sm bg-[#452023] text-white placeholder-white focus:outline-blue-600 focus:border-none text-sm"
+              />
+              <Button className="py-3 w-[45%] px-5 bg-primaryColor hover:bg-[#9D321E] rounded-lg h-auto font-medium text-lg">
+                Quero me inscrever
+              </Button>
+            </form>
           </div>
         </section>
       </div>
