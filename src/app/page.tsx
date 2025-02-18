@@ -14,6 +14,7 @@ import {
   TrendingDown,
   WalletCards,
 } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 import { HiOutlineLockClosed } from "react-icons/hi2";
 import { PiMailboxLight } from "react-icons/pi";
@@ -59,10 +60,7 @@ export default function Home() {
         <header className="fixed z-50 bg-white w-full top-0 left-0 h-auto py-5 px-64">
           <div className="flex flex-row justify-between">
             <div className="flex items-center text-2xl">
-              <img
-                src="https://quickdigitalbank.com.br/wp-content/uploads/2024/07/quick-digital-logo.svg"
-                alt=""
-              />
+              <Image src="/logo/ad.png" width={100} height={90} alt="" />
             </div>
             <div className="flex gap-8 justify-center items-center text-xl font-medium text-gray-600">
               <nav className="w-full px-4 py-2 text-lg">
@@ -133,7 +131,7 @@ export default function Home() {
               </nav>
               <Button
                 variant="default"
-                className="gap-2 py-3 px-4 bg-primaryColor hover:bg-[#9D321E] rounded-lg h-auto font-medium text-lg"
+                className="gap-2 py-3 px-4 bg-primaryColor hover:bg-hoverColor rounded-lg h-auto font-medium text-lg"
               >
                 <HiOutlineLockClosed className="!w-6 !h-6 " />
                 Login
@@ -144,10 +142,10 @@ export default function Home() {
 
         <div className="relative pt-16 px-64">
           {/* Background */}
-          <div className="absolute inset-0 bg-[#2F0B04]"></div>
+          <div className="absolute inset-0 bg-bannerBackgroundColor"></div>
 
           {/* Content container */}
-          <div className="relative flex flex-row  py-12">
+          <div className="relative flex flex-row pt-20 py-12">
             <div className="w-1/2 flex justify-center flex-col">
               <h1 className="font-semibold text-white text-[42px] leading-[44px] mb-4 w-4/5 break-words">
                 Simplificando a tecnologia financeira para o{" "}
@@ -165,10 +163,17 @@ export default function Home() {
             </div>
             {/* Right side */}
             <div className="relative w-1/2 flex justify-center">
-              <img
-                src="https://quickdigitalbank.com.br/wp-content/uploads/2024/08/quick-digital-banner.webp"
+              {/* <img
+                src=""
                 alt=""
                 className="w-[500px]"
+              /> */}
+              <Image
+                src="/ad.jpeg"
+                alt=""
+                width={400}
+                height={100}
+                className="rounded-xl"
               />
             </div>
           </div>
@@ -189,11 +194,17 @@ export default function Home() {
           </div>
         </div>
         <div className="relative px-64 pb-7">
-          <img
-            src="https://quickdigitalbank.com.br/wp-content/uploads/2024/08/banner-sobre-quick-digital.svg"
-            alt=""
-            className="w-full h-[350px] rounded-2xl object-cover"
-          />
+          <div className="relative w-full h-[350px] rounded-2xl overflow-hidden">
+            <Image
+              src="/amazonia.jpg"
+              alt=""
+              fill
+              className="object-cover"
+              quality={100}
+              priority
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 70vw"
+            />
+          </div>
           <div className="absolute inset-y-0 left-72 right-1/2 flex items-center">
             <div className="p-12">
               <h1 className="text-white text-4xl font-bold">
@@ -230,7 +241,7 @@ export default function Home() {
               clientes e parceiros, confira algumas e descomplique a vida
               financeira do seu negócio
             </p>
-            <Button className="gap-2 py-3 px-4 bg-primaryColor hover:bg-[#9D321E] rounded-lg h-auto font-medium text-lg w-1/2">
+            <Button className="gap-2 py-3 px-4 bg-primaryColor hover:bg-hoverColor rounded-lg h-auto font-medium text-lg w-1/2">
               Quero descomplicar
             </Button>
           </div>
@@ -391,7 +402,7 @@ export default function Home() {
           <div>
             <Button
               variant="default"
-              className="py-3 px-5 bg-primaryColor hover:bg-[#9D321E] rounded-lg h-auto font-medium text-lg"
+              className="py-3 px-5 bg-primaryColor hover:bg-hoverColor rounded-lg h-auto font-medium text-lg"
             >
               Quero ser um parceiro
             </Button>
@@ -407,20 +418,23 @@ export default function Home() {
             </h1>
             <Button
               variant="default"
-              className="py-3 w-2/5 px-5 bg-primaryColor hover:bg-[#9D321E] rounded-lg h-auto font-medium text-lg"
+              className="py-3 w-2/5 px-5 bg-primaryColor hover:bg-hoverColor rounded-lg h-auto font-medium text-lg"
             >
               Quero descomplicar
             </Button>
           </div>
           <div className="flex flex-grow p-5 justify-center">
-            <img
+            {/* <img
               src="https://quickdigitalbank.com.br/wp-content/uploads/2024/08/cta-thumbnail.webp"
               alt=""
               className="rounded-3xl w-3/4"
-            />
+            /> */}
+            <div className="w-3/4">
+              <Image src="/ad.jpeg" width={450} height={100} alt="" />
+            </div>
           </div>
         </section>
-        <section className="px-64 py-20 flex items-start text-white bg-orange-900">
+        <section className="px-64 py-20 flex items-start text-white bg-bannerBackgroundColor">
           <div className="flex flex-col w-1/3">
             <PiMailboxLight className="w-14 h-14" />
             <p className="py-5">
@@ -434,15 +448,15 @@ export default function Home() {
                 type="text"
                 id="name"
                 placeholder="Seu nome"
-                className="py-5 pl-2 rounded-sm bg-[#452023] text-white placeholder-white focus:outline-blue-600 focus:border-none text-sm"
+                className="py-5 pl-2 rounded-sm bg-gray-800 bg-opacity-50 text-white placeholder-white focus:outline-blue-600 focus:border-none text-sm"
               />
               <input
                 type="text"
                 id="email"
                 placeholder="Insira seu melhor email"
-                className="py-5 pl-2 rounded-sm bg-[#452023] text-white placeholder-white focus:outline-blue-600 focus:border-none text-sm"
+                className="py-5 pl-2 rounded-sm bg-gray-800 bg-opacity-50 text-white placeholder-white focus:outline-blue-600 focus:border-none text-sm"
               />
-              <Button className="py-3 w-[45%] px-5 bg-primaryColor hover:bg-[#9D321E] rounded-lg h-auto font-medium text-lg">
+              <Button className="py-3 w-[45%] px-5 bg-primaryColor hover:bg-hoverColor rounded-lg h-auto font-medium text-lg">
                 Quero me inscrever
               </Button>
             </form>

@@ -10,9 +10,11 @@ export default {
   theme: {
     extend: {
       colors: {
-        primaryColor: "#D43014",
-        secondaryColor: "#F0715C",
+        primaryColor: "#006633",
+        secondaryColor: "#019934",
         thirdColor: "#F6F6FA",
+        hoverColor: "#00531c",
+        bannerBackgroundColor: "#02180d",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         card: {
