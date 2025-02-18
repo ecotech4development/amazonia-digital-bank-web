@@ -390,23 +390,35 @@ export default function Home() {
           <div>
             <Button
               variant="default"
-              className="gap-2 py-3 px-5 bg-primaryColor hover:bg-[#9D321E] rounded-lg h-auto font-medium text-lg"
+              className="py-3 px-5 bg-primaryColor hover:bg-[#9D321E] rounded-lg h-auto font-medium text-lg"
             >
               Quero ser um parceiro
             </Button>
           </div>
         </div>
-        {/* <section className="flex flex-row items-center justify-center px-28">
+        <section className="flex flex-row items-center justify-center px-64 pb-20">
           <div className="w-[45%] flex flex-col p-5">
-            <h3 className="text-secondaryColor font-bold text-base">
+            <h3 className="text-secondaryColor font-bold text-base pb-3">
               AINDA NÃO ESTÁ CONVENCIDO?
             </h3>
-            <h1 className="text-5xl font-semibold">
+            <h1 className="text-5xl font-semibold pb-10">
               A Quick Digital é a solução para o seu negócio!
             </h1>
+            <Button
+              variant="default"
+              className="py-3 w-2/5 px-5 bg-primaryColor hover:bg-[#9D321E] rounded-lg h-auto font-medium text-lg"
+            >
+              Quero descomplicar
+            </Button>
           </div>
-          <div className="flex-grow p-5"></div>
-        </section> */}
+          <div className="flex flex-grow p-5 justify-center">
+            <img
+              src="https://quickdigitalbank.com.br/wp-content/uploads/2024/08/cta-thumbnail.webp"
+              alt=""
+              className="rounded-3xl w-3/4"
+            />
+          </div>
+        </section>
       </div>
     </>
   );
