@@ -154,8 +154,9 @@ export default function Home() {
                 </span>
               </h1>
               <p className="text-white mb-6">
-                Com a Quick Digital o empreendedor raiz terá descomplicação no
-                dia a dia de forma eficaz e sustentável de ponta a ponta.
+                Com a Amazônia Digital Bank o empreendedor raiz terá
+                descomplicação no dia a dia de forma eficaz e sustentável de
+                ponta a ponta.
               </p>
               <Button className="w-1/3 p-7 bg-transparent border border-white text-lg font-bold hover:bg-white hover:text-primaryColor hover:border-primaryColor">
                 Quero descomplicar
@@ -184,9 +185,9 @@ export default function Home() {
           </div>
           <div className="w-full flex flex-col justify-center gap-y-3 text-lg">
             <p className="break-words text-gray-500 text-xl">
-              Somos a Quick Digital, empresa que conhece o seu cliente no dia a
-              dia, entende todas as dores dos empresários, pequenas e médias
-              empresas do Brasil.
+              Somos a Amazônia Digital Bank, empresa que conhece o seu cliente
+              no dia a dia, entende todas as dores dos empresários, pequenas e
+              médias empresas do Brasil.
             </p>
             <a href="" className="text-primaryColor font-bold">
               —— Saiba mais
@@ -237,7 +238,7 @@ export default function Home() {
               Vantagens Exclusivas
             </h1>
             <p className="text-gray-600 py-5">
-              Na Quick Digital o que não falta são vantagens para nossos
+              Na Amazônia Digital Bank o que não falta são vantagens para nossos
               clientes e parceiros, confira algumas e descomplique a vida
               financeira do seu negócio
             </p>
@@ -288,7 +289,7 @@ export default function Home() {
             VEJAM O QUE DIZEM DA
           </h4>
           <h1 className="text-5xl font-semibold pb-10">
-            Quick Digital na mídia
+            Amazônia Digital Bank na mídia
           </h1>
           <div className="flex w-full px-[12%] gap-6 h-full">
             <div className="w-1/3 h-60">
@@ -414,7 +415,7 @@ export default function Home() {
               AINDA NÃO ESTÁ CONVENCIDO?
             </h3>
             <h1 className="text-5xl font-semibold pb-10">
-              A Quick Digital é a solução para o seu negócio!
+              A Amazônia Digital Bank é a solução para o seu negócio!
             </h1>
             <Button
               variant="default"
@@ -441,7 +442,7 @@ export default function Home() {
               Seu novo parceiro de negócios que fala a sua língua
             </p>
             <h1 className="text-3xl font-bold pb-10">
-              Fique por dentro de tudo que acontece na Quick Digital
+              Fique por dentro de tudo que acontece na Amazônia Digital Bank
             </h1>
             <form action="" className="flex flex-col gap-5">
               <input
